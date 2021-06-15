@@ -1,20 +1,19 @@
-# FulpTronJS
-A stinky DiscordJS bot
+# SUSbot
+A stolen DiscordJS bot
 
-FulpTron is 100% free to use or copy, preferably with a shoutout though. If you want to invite the official one to your servers, use this link:
-https://discordapp.com/oauth2/authorize?client_id=381604281968623617&scope=bot
+SUSbot is run locally on my machine, you can invite him here: https://discord.com/api/oauth2/authorize?client_id=808940178281463809&permissions=8&scope=bot
+(Administrative permissions, you can take a look at the commands, they don't steal your info.)
+When SUSbot is offline, it's either very temporary because I'm testing changes (temporary as in he'll be offline for like 5 seconds, but I may restart the bot extremely often when he's online so I appologize for the inconvenience) or I'm not at home / my pc is turned off.
+
+
 
 # COMMANDS
-A the full list can be found here: https://github.com/ninjamuffin99/FulpTronJS/blob/master/COMMANDS.md
+A the full list can be downloaded here: https://github.com/BojayB/SUSbot/COMMANDS.md
+(Default prefix is ?, going to add a function that allows you to change the prefix like most bots eventually)
+`?commands` Lists all of the available commands
 
-# ADDING FULPPICS
-FulpPics can be easily added by simply adding an image to the pics/fulp/ folder. If you have pic suggestions, you can either DM me the images on discord (ninja_muffin#9104) OR submit a pull request to this repository yourself. 
+
+  
 ## CREDS
-Main shit by me, ninjamuffin99
-
-Additional code by: BrandyBuizel
-
-Music Bot code: https://github.com/Dev-Yukine/Music-Bot/
-
-Shoutouts to BrenTheMan for helping with the 24/7 hosting
+I WAS ripping of Ninjamuffin's readme but I've changed my mind. Everything important came from here: https://github.com/ninjamuffin99/FulpTronJS
 
