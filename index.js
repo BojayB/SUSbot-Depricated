@@ -99,8 +99,8 @@ client.on('guildMemberAdd', async member =>
 	}
 
 });
-var emojiname = ["VOID:854560616416804915", "🖥️", "🎵", "🎙️", "🎞️", "🎨", "✍️", "💩"],
-    rolename = ["void", "Programmer", "Musician", "Voice Actor", "Animator", "Illustrator", "Writer", "Shitposter"];
+var emojiname = ["Amnesia", "HL", "Valve", "Behemoth", "Fortnite", "FLeaks", "Newgrounds", "💩"],
+    rolename = ["Amnesia", "HL", "Valve", "Behemoth", "Fortnite", "FLeaks", "Newgrounds"];
 
 
 
@@ -230,37 +230,76 @@ client.on('message', async message =>
 
 	// this message(and all others below it) does need a prefix, because it's after the if statement, and also needs the other info above, like command and args
 
+	var server = message.guild.id;
 	
-	if (command == 'rolesetup')
+
+	if (server == 844283915064967178)
 	{
-		if (!message.member.hasPermission('MANAGE_MESSAGES'))
-			return;
-
-		let rolesEmbed = new Discord.MessageEmbed()
-		.setTitle('BOJAY SERVER ROLE MANAGER')
-		.setDescription('REACT WITH EMOTE TO GET ROLE U WANT')
-		.setColor(0x7289DA);
-
-		var daString = "";
-		var i;
-		for (i = 0; i < emojiname.length; i++)
+		if (command == 'rolesetup')
 		{
-			daString += `${rolename[i]} - ${emojiname[i]}\n`;
+			if (!message.member.hasPermission('MANAGE_MESSAGES'))
+				return;
+
+			let rolesEmbed = new Discord.MessageEmbed()
+			.setTitle('IMPORTANT TEST')
+			.setDescription("IF YOU'RE READING THIS IT MEANS THAT I'VE GOT PER-SERVER ROLES WORKING!!!!!!!!")
+			.setColor(0x7289DA);
+
+			var daString = "";
+			var i;
+			for (i = 0; i < emojiname.length; i++)
+			{
+				daString += `${rolename[i]}\n`;
+			}
+
+			rolesEmbed.addField('ROLES', daString);
+
+			let daMessage = await message.channel.send(rolesEmbed);
+			message.delete();
+			//"Amnesia", "HL", "Valve", "Behemoth️", "Fortnite", "FortniteLeaks", "Newgeounds", "💩"
+			daMessage.react('854561261756219393')
+			.then(react => daMessage.react('854561248985481226'))
+			.then(react => daMessage.react('854561229330317363'))
+			.then(react => daMessage.react('854561201949245491'))
+			.then(react => daMessage.react('854561179241807913'))
+			.then(react => daMessage.react('854561127673233418'))
+			.then(react => daMessage.react('854561105166204938'));
+	//		.then(react => daMessage.react("💩"));
 		}
+	}
+	if (server == 722293245140402188)
+	{
+		if (command == 'rolesetup')
+		{
+			if (!message.member.hasPermission('MANAGE_MESSAGES'))
+				return;
 
-		rolesEmbed.addField('ROLES', daString);
+			let rolesEmbed = new Discord.MessageEmbed()
+			.setTitle('BOJAY SERVER ROLE MANAGER')
+			.setDescription('Each emoji corresponds to a role. Roles Top - Down, Emojis Left - Right')
+			.setColor(0x7289DA);
 
-		let daMessage = await message.channel.send(rolesEmbed);
-		message.delete();
-		//"🎮", "🖥️", "🎵", "🎙️", "🎞️", "🎨", "✍️", "💩"
-		daMessage.react('854560616416804915')
-		.then(react => daMessage.react("🖥️"))
-		.then(react => daMessage.react("🎵"))
-		.then(react => daMessage.react("🎙️"))
-		.then(react => daMessage.react("🎞️"))
-		.then(react => daMessage.react("🎨"))
-		.then(react => daMessage.react("✍️"))
-		.then(react => daMessage.react("💩"));
+			var daString = "";
+			var i;
+			for (i = 0; i < emojiname.length; i++)
+			{
+				daString += `${rolename[i]}\n`;
+			}
+
+			rolesEmbed.addField('ROLES', daString);
+
+			let daMessage = await message.channel.send(rolesEmbed);
+			message.delete();
+			//"Amnesia", "HL", "Valve", "Behemoth️", "Fortnite", "FortniteLeaks", "Newgeounds", "💩"
+			daMessage.react('854561261756219393')
+			.then(react => daMessage.react('854561248985481226'))
+			.then(react => daMessage.react('854561229330317363'))
+			.then(react => daMessage.react('854561201949245491'))
+			.then(react => daMessage.react('854561179241807913'))
+			.then(react => daMessage.react('854561127673233418'))
+			.then(react => daMessage.react('854561105166204938'));
+	//		.then(react => daMessage.react("💩"));
+		}
 	}
 
 client.on("messageReactionAdd", (e, user) => {
