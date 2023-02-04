@@ -1,4 +1,4 @@
-# SUSbot
+# SUSbot (IS NO LONGER THE GO-TO REPO, I'M RESTARTING FROM SCRATCH [HERE](https://github.com/BojayB/SUSbot)
 A stolen DiscordJS bot
 
 SUSbot is run locally on my machine, you can invite him here: https://discord.com/api/oauth2/authorize?client_id=808940178281463809&permissions=8&scope=bot
