@@ -1,4 +1,7 @@
 # SUSbot (IS NO LONGER THE GO-TO REPO, I'M RESTARTING FROM SCRATCH [HERE](https://github.com/BojayB/SUSbot)
+
+I'm sorry, this was archived Feb 4th 2023, but i unarchived it because the repo title was BojayB/SUSbot-Depricated-, and the - at the end was pissing me off. It is now rearchived as of May 5th 2023, 3:26 AM.
+
 A stolen DiscordJS bot
 
 SUSbot is run locally on my machine, you can invite him here: https://discord.com/api/oauth2/authorize?client_id=808940178281463809&permissions=8&scope=bot
